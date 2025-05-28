@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
   <div>
@@ -13,7 +11,13 @@ import HelloWorld from './components/HelloWorld.vue'
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
-
+<script setup lang="ts">
+import HelloWorld from './components/HelloWorld.vue'
+import checkForUpdate from './hooks/detect-updates'
+if(import.meta.env.MODE !== 'development') {
+  setInterval(checkForUpdate, 10000) // 每 5 秒检查一次
+}
+</script>
 <style scoped>
 .logo {
   height: 6em;
