@@ -15,7 +15,7 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
     }),],
-  base: '/github-pages-test/',
+  // base: '/github-pages-test/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
