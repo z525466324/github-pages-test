@@ -1,6 +1,6 @@
 <template>
  1231
- <button @click="handleJump">首页</button>
+    <el-button type="primary" plain @click="handleJump">首页</el-button>
 </template>
 <script lang='ts' setup>
  import {useRouter} from 'vue-router'

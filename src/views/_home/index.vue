@@ -1,6 +1,5 @@
 <template>
- home
- <button @click="handleJump">点击home</button>
+    <el-button type="primary" @click="handleJump">click</el-button>
 </template>
 <script lang='ts' setup>
  import {useRouter}from "vue-router"

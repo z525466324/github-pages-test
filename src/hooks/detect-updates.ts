@@ -1,3 +1,4 @@
+import { ElMessageBox } from 'element-plus'
 // 轮循查询文件, 有更新提示
 let currentVersionHash = ''
 
@@ -17,9 +18,13 @@ async function checkForUpdate() {
     if (!currentVersionHash) {
       currentVersionHash = newHash
     } else if (currentVersionHash !== newHash) {
+      ElMessageBox.alert('检测到新版本，点击确认刷新页面', '更新', {
+        confirmButtonText: '更新',
+        callback: () => {
+          window.location.reload()
+        },
+      })
       console.log('🚨 发现新版本，准备刷新页面')
-      alert('检测到新版本，点击确认刷新页面')
-      window.location.reload()
     }
   } catch (err) {
     console.error('版本检查失败', err)
