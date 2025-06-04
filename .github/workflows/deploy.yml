@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ gh-pages ]  # 监听 main 分支的推送
+    branches: [ main ]  # 监听 main 分支的推送
 
 jobs:
   build-and-deploy:
@@ -26,7 +26,7 @@ jobs:
 
       # 4. 部署到 Pages 分支
       - name: Deploy
-        uses: github-pages-test/gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # 自动生成的 Token
           branch: gh-pages    # 目标 Pages 分支
