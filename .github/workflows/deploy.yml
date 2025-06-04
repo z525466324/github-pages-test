@@ -32,6 +32,3 @@ jobs:
           branch: gh-pages    # 目标 Pages 分支
           folder: dist        # 构建后的目录
           force: true         # 强制覆盖历史提交
-          clean-exclude: |       # 保留必要文件
-            .nojekyll
-            CNAME
