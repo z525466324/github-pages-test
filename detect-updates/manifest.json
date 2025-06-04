@@ -1,0 +1,20 @@
+{
+  "index.html": {
+    "file": "index.Ujwxnxmc.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/views/_error/index.vue"
+    ],
+    "css": [
+      "index.B8IF8Xyl.css"
+    ]
+  },
+  "src/views/_error/index.vue": {
+    "file": "index.DgY0bx7u.js",
+    "name": "index",
+    "src": "src/views/_error/index.vue",
+    "isDynamicEntry": true
+  }
+}
