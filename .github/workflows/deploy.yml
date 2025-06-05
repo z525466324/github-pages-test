@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]  # 监控这个分支的推送
 
+permissions:
+  contents: write  # 添加这个权限声明
+
 jobs:
   deploy:
     runs-on: ubuntu-latest  # 使用 GitHub 的虚拟环境
