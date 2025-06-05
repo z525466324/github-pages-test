@@ -1,5 +1,5 @@
 <template>
-    <el-button type="primary" @click="handleJump">click</el-button>
+    <el-button type="primary" @click="handleJump">cliack</el-button>
 </template>
 <script lang='ts' setup>
  import {useRouter}from "vue-router"
