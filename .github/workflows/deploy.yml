@@ -24,4 +24,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 自动提供的密钥
           publish_dir: ./dist  # 要发布的目录
+          commit_message: "Deploy: ${{ github.sha }} [skip ci]"  # 防止触发新工作流
           force_orphan: true
