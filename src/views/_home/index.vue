@@ -1,6 +1,6 @@
 <template>
     <el-button type="primary" @click="handleJump">cliack</el-button>
-    <el-button type="info" @click="handleMessage">Infoaaa</el-button>
+    <el-button type="info" @click="handleMessage">Infobbbb</el-button>
 </template>
 <script lang='ts' setup>
     import {useRouter}from "vue-router"
