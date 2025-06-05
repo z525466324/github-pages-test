@@ -2,8 +2,6 @@ name: Deploy to GH Pages
 on:
   push:
     branches: [main]  # 监控这个分支的推送
-    branches-ignore:       # 显式忽略 gh-pages
-      - gh-pages
 
 permissions:
   contents: write  # 添加这个权限声明
