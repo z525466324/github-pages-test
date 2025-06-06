@@ -4,6 +4,7 @@ import {resolve} from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import eslintPlugin from 'vite-plugin-eslint'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,7 +15,11 @@ export default defineConfig({
     }),
     Components({
       resolvers: [ElementPlusResolver()],
-    }),],
+    }),
+    eslintPlugin({
+      include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.ts', 'src/*.vue'],
+    })
+  ],
   base: '/github-pages-test/',
   resolve: {
     alias: {
