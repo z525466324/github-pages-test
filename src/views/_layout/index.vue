@@ -1,7 +1,7 @@
 <template>
   1231123aaa
   <el-button type="primary" plain @click="handleJump">首页</el-button>
-  <el-button type="primary" plain @click="handleClick">点击</el-button>
+  <el-button type="primary" plain @click="handleClick">点击1</el-button>
 </template>
 <script lang="ts" setup>
 import { useRouter } from "vue-router";
