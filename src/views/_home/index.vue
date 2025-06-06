@@ -2,7 +2,7 @@
     <el-button type="primary" @click="handleJump">cliack</el-button>
     <el-button type="info" @click="handleMessage">1222223dd</el-button>
     <el-button type="primary" @click="handleDebounce('123', 'abc')">防抖函数</el-button>
-    <el-button type="primary" @click="handleThrottling('123', 'abc')">节流函数</el-button>
+    <el-button type="primary" @click="handleThrottling('123', 'abc')">节流123函数</el-button>
 </template>
 <script lang='ts' setup>
     import {useRouter}from "vue-router"
