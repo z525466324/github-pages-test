@@ -17,5 +17,6 @@ const handleClick = () => {
     age: 12,
   });
 };
+console.log("1");
 </script>
 <style lang="scss" scoped></style>
