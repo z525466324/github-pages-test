@@ -40,5 +40,4 @@ export default {
   // 换行符使用 lf 结尾是 可选值"<auto|lf|crlf|cr>"
   endOfLine: "auto",
   bracketSameLine: true,
-  htmlWhitespaceSensitivity: "ignore",
 };

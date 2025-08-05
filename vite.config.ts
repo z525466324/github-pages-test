@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import {resolve} from 'path'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import eslintPlugin from 'vite-plugin-eslint'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import { resolve } from "path";
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import eslintPlugin from "vite-plugin-eslint";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,26 +17,26 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
     eslintPlugin({
-      include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.ts', 'src/*.vue'],
-    })
+      include: ["src/**/*.ts", "src/**/*.vue", "src/*.ts", "src/*.vue"],
+    }),
   ],
-  base: '/github-pages-test/',
+  base: "/github-pages-test/",
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
-      '@views': resolve(__dirname, 'src/views'),
-    }
+      "@": resolve(__dirname, "src"),
+      "@views": resolve(__dirname, "src/views"),
+    },
   },
   build: {
     // 开启manifest生成
-    manifest: 'detect-updates/manifest.json',
+    manifest: "detect-updates/manifest.json",
     rollupOptions: {
       output: {
         // 确保文件名包含哈希（默认已启用）
         entryFileNames: `[name].[hash].js`,
         chunkFileNames: `[name].[hash].js`,
-        assetFileNames: `[name].[hash].[ext]`
-      }
+        assetFileNames: `[name].[hash].[ext]`,
+      },
     },
-  }
-})
+  },
+});

@@ -54,7 +54,7 @@ export default defineConfig([
       "@typescript-eslint/no-empty-function": 1,
       "@typescript-eslint/no-var-requires": 0,
       "@typescript-eslint/no-explicit-any": 0,
-      "@typescript-eslint/ban-ts-comment": 0,
+      "@typescript-eslint/ban-ts-comment": "warn",
       "@typescript-eslint/no-non-null-assertion": 0,
       "vue/component-definition-name-casing": [2, "kebab-case"],
       "vue/require-default-prop": 0,
