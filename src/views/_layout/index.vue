@@ -62,7 +62,7 @@ import childrenComponent from "./childrenComponent.vue";
 
 // const testt = defineAsyncComponent(() => import("@/components/testCom.vue"));
 const testt = defineAsyncComponent({
-  loader: () => import("@/components/testCom.vue"),
+  loader: () => import("@/components/test.vue"),
   loadingComponent: loadingComponents,
   delay: 3000,
 });

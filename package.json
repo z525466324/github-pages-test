@@ -19,8 +19,7 @@
   "lint-staged": {
     "*.{js,ts,tsx,vue}": [
       "eslint --fix",
-      "bash -c vue-tsc --noEmit",
-      "git add"
+      "bash -c vue-tsc --noEmit"
     ]
   },
   "dependencies": {
